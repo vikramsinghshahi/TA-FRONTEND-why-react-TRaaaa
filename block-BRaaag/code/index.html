@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Watch List</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Watch List</h1>
+
+      <input
+        type="text"
+        class="search-box"
+        name="search"
+        placeholder="Enter the movie name!"
+      />
+
+      <ul class="movies_List"></ul>
+    </div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      let input = document.querySelector(`input[type = "text"]`);
+      let rootElm = document.querySelector('.movies_List');
+      let allMovies = [
+        {
+          name: 'Inception',
+          watched: false,
+        },
+        {
+          name: 'Krish',
+          watched: true,
+        },
+      ];
+
+      input.addEventListener('keyup', (event) => {
+        if (event.keyCode === 13) {
+          allMovies.push({
+            name: event.target.value,
+            watched: false,
+          });
+          event.target.value = '';
+          createMovies();
+        }
+      });
+
+      function handleChange(event) {
+        let id = event.target.id;
+        allMovies[id].watched = !allMovies[id].watched;
+        createMovies();
+      }
+
+      function createMovies() {
+        let todoUI = allMovies.map((movie, i) => {
+          return (
+            <li key={movie.name}>
+              <label>{movie.name}</label>
+              <button id={i} onClick={handleChange}>
+                {movie.watched ? 'Watched' : 'To Watch'}
+              </button>
+            </li>
+          );
+        });
+        ReactDOM.render(todoUI, rootElm);
+      }
+      createMovies();
+    </script>
+  </body>
+</html>
