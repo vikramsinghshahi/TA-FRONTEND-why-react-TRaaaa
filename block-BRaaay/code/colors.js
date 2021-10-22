@@ -1,5 +1,5 @@
-{
-  "gray": [
+let colors = {
+  gray: [
     "#f8f9fa",
     "#f1f3f5",
     "#e9ecef",
@@ -11,7 +11,7 @@
     "#343a40",
     "#212529"
   ],
-  "red": [
+  red: [
     "#fff5f5",
     "#ffe3e3",
     "#ffc9c9",
@@ -23,7 +23,7 @@
     "#e03131",
     "#c92a2a"
   ],
-  "pink": [
+  pink: [
     "#fff0f6",
     "#ffdeeb",
     "#fcc2d7",
@@ -35,7 +35,7 @@
     "#c2255c",
     "#a61e4d"
   ],
-  "grape": [
+  grape: [
     "#f8f0fc",
     "#f3d9fa",
     "#eebefa",
@@ -47,7 +47,7 @@
     "#9c36b5",
     "#862e9c"
   ],
-  "violet": [
+  violet: [
     "#f3f0ff",
     "#e5dbff",
     "#d0bfff",
@@ -59,7 +59,7 @@
     "#6741d9",
     "#5f3dc4"
   ],
-  "indigo": [
+  indigo: [
     "#edf2ff",
     "#dbe4ff",
     "#bac8ff",
@@ -71,7 +71,7 @@
     "#3b5bdb",
     "#364fc7"
   ],
-  "blue": [
+  blue: [
     "#e7f5ff",
     "#d0ebff",
     "#a5d8ff",
@@ -83,7 +83,7 @@
     "#1971c2",
     "#1864ab"
   ],
-  "cyan": [
+  cyan: [
     "#e3fafc",
     "#c5f6fa",
     "#99e9f2",
@@ -95,7 +95,7 @@
     "#0c8599",
     "#0b7285"
   ],
-  "teal": [
+  teal: [
     "#e6fcf5",
     "#c3fae8",
     "#96f2d7",
@@ -107,7 +107,7 @@
     "#099268",
     "#087f5b"
   ],
-  "green": [
+  green: [
     "#ebfbee",
     "#d3f9d8",
     "#b2f2bb",
@@ -119,7 +119,7 @@
     "#2f9e44",
     "#2b8a3e"
   ],
-  "lime": [
+  lime: [
     "#f4fce3",
     "#e9fac8",
     "#d8f5a2",
@@ -131,7 +131,7 @@
     "#66a80f",
     "#5c940d"
   ],
-  "yellow": [
+  yellow: [
     "#fff9db",
     "#fff3bf",
     "#ffec99",
@@ -143,7 +143,7 @@
     "#f08c00",
     "#e67700"
   ],
-  "orange": [
+  orange: [
     "#fff4e6",
     "#ffe8cc",
     "#ffd8a8",
